@@ -3,6 +3,7 @@
  ** Language: Javascript
  ** Problem: https://leetcode.com/problems/palindrome-number/
  ** Author: YCmove
+ ** Run Time: 429ms
  **/
 /**
  * @param {number} x
