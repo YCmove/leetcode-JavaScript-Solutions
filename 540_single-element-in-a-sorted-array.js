@@ -23,10 +23,10 @@ var singleNonDuplicate = function (nums) {
     var num = nums[count];
     var arr = nums.filter(model => model === num)
     if (arr.length === 1) {
-        return num;git
+        return num;
     }
     return singleNonDuplicate(nums)
 
 };
 
-console.log(singleNonDuplicate([0, 1, 1]))
+// console.log(singleNonDuplicate([0, 1, 1]))
