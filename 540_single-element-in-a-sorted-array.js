@@ -10,15 +10,23 @@
  * @return {number}
  */
 
-var counter = (function () {
-    var count = 0;
-    return function () {
-        return count++
-    }
-})();
+// var counter = (function () {
+//     var count = 0;
+//     return function () {
+//         return count++
+//     }
+// })();
 
 
 var singleNonDuplicate = function (nums) {
+
+    var counter = (function () {
+        var count = 0;
+        return function () {
+            return count++
+        }
+    })();
+
     var count = counter();
     var num = nums[count];
     var arr = nums.filter(model => model === num)
@@ -29,4 +37,4 @@ var singleNonDuplicate = function (nums) {
 
 };
 
-// console.log(singleNonDuplicate([0, 1, 1]))
+console.log(singleNonDuplicate([0, 1, 1]))
