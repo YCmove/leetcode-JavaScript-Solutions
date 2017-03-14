@@ -1,16 +1,24 @@
+/* 
+ ** Leetcode #:
+ ** Language: Javascript
+ ** Problem: https://leetcode.com/problems/
+ ** Author: YCmove
+ ** Run Time: 
+ **/
+// input array is a large array which was sorted by number
+
 'use strict'
 
 var inputAaary1 = [0, 0, 1, 2, 3, 3, 3, 5, 7, 7, 7, 8, 8, 11, 12, 12, 12, 12]
 var inputAaary2 = [0, 0]
 var inputAaary2 = [3, 4, 6, 6, 7]
 
-// input array is a large array which was sorted by number
 
 console.log(count(3, inputAaary1));
 
 function count(x, arr) {
 
-    console.log('input array : ', arr)
+    // console.log('input array : ', arr)
 
     var arrLength = arr.length
     var small = arr[0]
@@ -25,19 +33,8 @@ function count(x, arr) {
         return false
     } else if (x === small) {
         return boundaryCount(x, arr)
-        // for (let i = 0; i < arrLength - 1; i++) {
-        //     if (arr[i] !== x) {
-        //         return i
-        //     }
-        // }
     } else if (x === big) {
-
         return boundaryCount(x, arr.reverse())
-        // for (let i = arrLength - 1; i > -1; i--) {
-        //     if (arr[i] !== x) {
-        //         return arrLength - i - 1
-        //     }
-        // }
     }
 
     function boundaryCount(x, arr) {
