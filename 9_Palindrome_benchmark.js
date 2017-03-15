@@ -12,13 +12,13 @@ var num1 = 5566112116655
 var num2 = 121
 
 suite.add('palin1', () => {
-        palin1(num2)
+        palin1(num1)
     })
     .add('palin2', () => {
-        palin2(num2)
+        palin2(num1)
     })
     .add('palin3', () => {
-        palin3(num2)
+        palin3(num1)
     })
     // add listeners
     .on('cycle', function (event) {
@@ -33,6 +33,15 @@ suite.add('palin1', () => {
     });
 
 // output
+// var num1 = 5566112116655
+
+// palin1 x 11,065,281 ops/sec ±0.65% (89 runs sampled)
+// palin2 x 4,423,035 ops/sec ±1.36% (82 runs sampled)
+// palin3 x 829,759 ops/sec ±1.47% (84 runs sampled)
+// Fastest is palin1
+
+// output
+// var num2 = 121
 // palin1 x 29,468,782 ops/sec ±0.90% (86 runs sampled)
 // palin2 x 8,583,063 ops/sec ±0.67% (90 runs sampled)
 // palin3 x 2,150,013 ops/sec ±1.42% (91 runs sampled)
