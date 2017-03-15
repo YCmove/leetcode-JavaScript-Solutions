@@ -34,3 +34,5 @@ var isPalindrome = function (x) {
     return flag;
 
 };
+
+module.exports = isPalindrome
