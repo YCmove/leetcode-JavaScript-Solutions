@@ -18,7 +18,7 @@ suite.add('palin1', () => {
         palin2(num2)
     })
     .add('palin3', () => {
-        palin2(num2)
+        palin3(num2)
     })
     // add listeners
     .on('cycle', function (event) {
@@ -33,7 +33,7 @@ suite.add('palin1', () => {
     });
 
 // output
-// palin1 x 29,152,588 ops/sec ±2.27% (85 runs sampled)
-// palin2 x 8,657,013 ops/sec ±0.99% (88 runs sampled)
-// palin3 x 8,334,507 ops/sec ±1.29% (85 runs sampled)
+// palin1 x 29,468,782 ops/sec ±0.90% (86 runs sampled)
+// palin2 x 8,583,063 ops/sec ±0.67% (90 runs sampled)
+// palin3 x 2,150,013 ops/sec ±1.42% (91 runs sampled)
 // Fastest is palin1
