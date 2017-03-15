@@ -5,7 +5,7 @@
  ** Author: YCmove
  ** Run Time: 
  **/
-// input array is a large array which was sorted by number
+// input array is a large array which was sorted in order
 
 'use strict'
 

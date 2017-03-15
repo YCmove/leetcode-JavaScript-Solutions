@@ -34,7 +34,6 @@ suite.add('palin1', () => {
 
 // output
 // var num1 = 5566112116655
-
 // palin1 x 11,065,281 ops/sec ±0.65% (89 runs sampled)
 // palin2 x 4,423,035 ops/sec ±1.36% (82 runs sampled)
 // palin3 x 829,759 ops/sec ±1.47% (84 runs sampled)
