@@ -16,3 +16,5 @@ function addf(first) {
 }
 
 // console.log(addf(3)(10))
+
+module.exports = addf

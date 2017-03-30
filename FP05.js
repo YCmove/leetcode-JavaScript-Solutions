@@ -21,7 +21,7 @@ function liftf(func) {
 }
 
 
-console.log(liftf(mul)(5)(6))
+// console.log(liftf(mul)(5)(6))
 
 
 
@@ -36,3 +36,5 @@ function sub(a, b) {
 function mul(a, b) {
     return a * b
 }
+
+module.exports = liftf;

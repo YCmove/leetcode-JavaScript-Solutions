@@ -22,7 +22,16 @@ function curry(binery) {
     }
 }
 
-console.log(curry(add)(5)(6))
+function curryExt(binery) {
+    return function (...first) {
+        return function (...second) {
+            return binery(...first, ...second)
+        }
+    }
+}
+
+// console.log(curry(add)(5)(6))
+// console.log(curryExt(add)(5, 2, 1)(3, 3))
 
 function add(a, b) {
     return a + b
@@ -35,3 +44,5 @@ function sub(a, b) {
 function mul(a, b) {
     return a * b
 }
+
+module.exports = curry;
