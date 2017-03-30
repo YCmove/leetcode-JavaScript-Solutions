@@ -45,7 +45,7 @@ suite.add('palin1', () => {
 // Fastest is palin4
 
 // output
-// var num2 = 121
+// var num2 = 242
 // palin1 x 31,209,246 ops/sec ±1.57% (85 runs sampled)
 // palin2 x 8,354,274 ops/sec ±0.90% (88 runs sampled)
 // palin3 x 2,197,383 ops/sec ±1.09% (88 runs sampled)
